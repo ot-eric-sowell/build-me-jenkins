@@ -18,7 +18,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
-                sh 'zip -r myfiles.zip .'
+                sh 'zip -r myfiles.zip . -x *.git*'
                 echo 'I think I zipped'
                 sh 'ls -al'
             }

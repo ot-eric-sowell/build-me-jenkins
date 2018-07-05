@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-                sh /usr/local/share/dotnet/dotnet build
+                sh "/usr/local/share/dotnet/dotnet build"
                 echo 'Done building'
             }
         }
